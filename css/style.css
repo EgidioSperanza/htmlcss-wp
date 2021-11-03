@@ -151,19 +151,20 @@ nav ul li a:hover{
  height: 250px;
  margin-bottom: 20px;
  background-size: cover;
+ background-position: 50% 50%;
  position: relative;
 }
 
 .banner-left{
-    background: url(../img/img-1.jpg) no-repeat 50% 50%;
+    background-image: url(../img/img-1.jpg);
 }
 
 .banner-central{
-    background: url(../img/banner-2.jpg) no-repeat 50% 40%;
+    background-image: url(../img/banner-2.jpg);
 }
 
 .banner-right{
-    background: url(../img/img-3.jpg) no-repeat 50% 50%;
+    background-image: url(../img/img-3.jpg);
 }
 /* ----END COLUMN BANNER---- */
 
