@@ -13,6 +13,11 @@ body{
     margin: 0 auto;
 }
 
+.b-rad {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
 .row{
     padding-bottom:20px;
 }
@@ -43,7 +48,6 @@ header{
     background: url(../img/banner.jpg) 50% 50%;
     background-size: cover;
     height:500px;
-    border-radius: 20px;
     margin-bottom: 20px;
     position:relative;
 }
@@ -60,6 +64,20 @@ main{
 h3, p{
     color: slategray;
 }
+
+/* ----START FILTER---- */
+.filter::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.2;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+/* ----END FILTER---- */
 
 /* ----START MENU NAVBAR---- */
 nav{
@@ -94,6 +112,7 @@ nav ul li a:hover{
     position: absolute;
     bottom: 60px;
     left: 60px;
+    z-index: 2;
 }
 
 .jumbo-text .jumbo-title{
@@ -130,9 +149,9 @@ nav ul li a:hover{
 /* ----START COLUMN BANNER---- */
 .banner{
  height: 250px;
- border-radius: 20px;
  margin-bottom: 20px;
  background-size: cover;
+ position: relative;
 }
 
 .banner-left{
@@ -147,14 +166,6 @@ nav ul li a:hover{
     background: url(../img/img-3.jpg) no-repeat 50% 50%;
 }
 /* ----END COLUMN BANNER---- */
-
-/* ----START FILTER---- */
-.filter{
-    background-color: rgba(0,0,0,0.25);
-    height: 100%;
-    border-radius: 20px;
-}
-/* ----END FILTER---- */
 
 /* ---START FOOTER---- */
 footer{
